@@ -1,10 +1,11 @@
 import random
 import string
 
-generated_password = []
+
 
 def generator(longueur = 15):
-
+    generated_password = []
+    
     for _ in range(longueur):
         random_number = random.randint(0,9)
         random_letter = random.choice(string.ascii_letters)
